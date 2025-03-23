@@ -32,7 +32,8 @@ O código principal (`src/main.c`) utiliza a função `printk()` para imprimir a
 
 ### Conclusão
 
-Este projeto foi uma experiência divertida, onde pude não apenas aprender sobre o Zephyr OS e o desenvolvimento de sistemas embarcados, mas também explorar a virtualização com QEMU. A implementação do sistema de tempo real me proporcionaram um aprendizado significativo, diversificando meu repertório técnico e ampliando minha visão sobre como esses sistemas funcionam em ambientes de hardware virtualizado. A experiência foi enriquecedora e estimulante, me preparando para futuros desafios na área.
+Este projeto foi uma experiência divertida e agradável, onde pude não apenas aprender sobre o Zephyr OS e o desenvolvimento de sistemas embarcados, mas também explorar a virtualização com QEMU. A implementação do sistema de tempo real e a criação da aplicação "Hello World!" me proporcionaram um aprendizado significativo, diversificando meu repertório técnico e ampliando minha visão sobre como esses sistemas funcionam em ambientes de hardware virtualizado. Além disso, o projeto despertou minha curiosidade sobre o mundo dos sistemas embarcados, me motivando a me aprofundar ainda mais no assunto e explorar novas possibilidades de desenvolvimento, como integração com sensores e dispositivos externos. A experiência foi enriquecedora e estimulante, me preparando para futuros desafios na área.
+
 
 ---
 
