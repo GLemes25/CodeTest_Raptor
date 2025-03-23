@@ -24,21 +24,21 @@ O código principal (`src/main.c`) utiliza a função `printk()` para imprimir a
 ### Desafios Enfrentados
 - **Configuração Inicial**: Instalar e configurar o Zephyr SDK na minha máquina, incluindo as dependências do Python e do QEMU, foi um desafio, pois, sendo ferramentas novas para mim, precisei ler a documentação e realizar testes para entender seu funcionamento.
   
-- **Refatoração e Organização do Código**: Melhorar e limpar o código base do exemplo foi desafiador devido à grande quantidade de arquivos e diretórios interligados. O objetivo era manter a estrutura modular para permitir futuras expansões do projeto.
+- **Refatoração e Organização do Código**: Melhorar e limpar o código base do exemplo, devido à quantidade de arquivos e diretórios interligados. O objetivo era manter a estrutura que permita futuras expansões do projeto.
 
 ### Melhorias Futuras
 - **Execução em Hardware Físico**: Expandir o projeto para rodar em hardware embarcado real.
 - **Integração com Sensores**: Implementar drivers para sensores e dispositivos externos.
 
 ### Conclusão
-O projeto demonstra a implementação de um sistema de tempo real utilizando o Zephyr OS em um ambiente virtualizado com QEMU, exibindo a mensagem `"Hello World! This is Raptor!"` no console.
+
+Este projeto foi uma experiência divertida, onde pude não apenas aprender sobre o Zephyr OS e o desenvolvimento de sistemas embarcados, mas também explorar a virtualização com QEMU. A implementação do sistema de tempo real me proporcionaram um aprendizado significativo, diversificando meu repertório técnico e ampliando minha visão sobre como esses sistemas funcionam em ambientes de hardware virtualizado. A experiência foi enriquecedora e estimulante, me preparando para futuros desafios na área.
 
 ---
 
-## Métodos que usei para a instalação e Execução no Arch Linux 
+## Métodos que usei para a instalação e execução no Arch Linux 
 
 A seguir, estão os meus passos para configurar e executar o projeto.
-> Use-os para auxiliar no teste do projeto
 
 ### 1. Instalar o Yay
 O **yay** é um helper de AUR de minha preferencia utilizado para instalar pacotes no Arch.
@@ -46,7 +46,7 @@ O **yay** é um helper de AUR de minha preferencia utilizado para instalar pacot
 ```bash
 sudo pacman -S yay
 ```
-> Caso no seja do seu agrado substitua `yay` por `sudo pacman`: 
+> Caso não seja do seu agrado substitua `yay` por `sudo pacman`: 
 
 
 ### 2. Instalar o QEMU
@@ -116,14 +116,10 @@ west init -l
 west update
 ```
 
-### 9. Modificar o Código para Exibir a Mensagem Desejada
-Editei as variáveis do projeto e o arquivo `app/src/main.c` para exibir a mensagem personalizada:  
-**"Hello World! This is Raptor!"**
+### 9. Modificar o Código para Exibir a Mensagem Desejada 
+Editei as variáveis do projeto e o arquivo `app/src/main.c` para exibir a mensagem **"Hello World! This is Raptor!"**, analisei a estrutura do projeto e removi arquivos e diretórios desnecessários.
 
-### 10. Limpeza do Projeto
-Analisei a estrutura do projeto e removi arquivos e diretórios desnecessários.
-
-### 11. Compilar o Projeto
+### 10. Compilar o Projeto
 
 ```bash
 west build -b qemu_x86 app --pristine
@@ -134,7 +130,7 @@ west build -b qemu_x86 app --pristine
 > rm -rf build
 > ```
 
-### 12. Executar o Projeto no QEMU
+### 11. Executar o Projeto no QEMU
 Para rodar o projeto no QEMU, utilize o comando:
 
 ```bash
