@@ -9,7 +9,7 @@
 int main(void)
 {
 	
-	printk("Zephyr Example Application ");
+	printk("Hello Word! This is Raptor!");
 
 	return 0;
 }
